@@ -1,48 +1,47 @@
 {
-    "name": "wtproject",
-    "version": "1.0.0",
-    "description": "WT Project  2020 181319",
-    "main": "index.html",
-    "scripts": {
-        "start": "npm run lite",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "lite": "lite-server",
-        "scss": "node-sass -o css/ css/",
-        "watch:scss": "onchange 'css/*.scss' -- npm run scss",
-        "watch:all": "parallelshell 'npm run lite'",
-        "clean": "rimraf dist",
-        "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-        "imagemin": "imagemin img/* -o dist/img",
-        "usemin": "usemin portfolio-details.html -d dist --htmlmin -o dist/portfolio-details.html && usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin index.html -d dist --htmlmin -o dist/index.html",
-        "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
-
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/TheTechrie/thetechrie.com.git"
-    },
-    "keywords": [
-        "181319"
-    ],
-    "author": "Muhammad Atif Waheed",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/TheTechrie/thetechrie.com/issues"
-    },
-    "homepage": "https://github.com/TheTechrie/thetechrie.com#readme",
-    "devDependencies": {
-        "cssmin": "^0.4.3",
-        "htmlmin": "0.0.7",
-        "lite-server": "^2.6.1",
-        "onchange": "^7.1.0",
-        "parallelshell": "^3.0.2",
-        "rimraf": "^3.0.2",
-        "uglifyjs": "^2.4.11",
-        "usemin-cli": "^0.6.0"
-    },
-    "dependencies": {
-        "bootstrap": "^5.0.0-beta1",
-        "vendor": "^1.7.0",
-        "vendors": "^1.0.4"
-    }
+  "name": "portfolio",
+  "version": "1.0.1",
+  "description": "WT Project  2020 181319",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run lite'",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin portfolio-details.html -d dist --htmlmin -o dist/portfolio-details.html && usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheTechrie/thetechrie.com.git"
+  },
+  "keywords": [
+    "181319"
+  ],
+  "author": "Muhammad Atif Waheed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheTechrie/thetechrie.com/issues"
+  },
+  "homepage": "https://github.com/TheTechrie/thetechrie.com#readme",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.2",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "vendor": "^1.7.0",
+    "vendors": "^1.0.4"
+  }
 }
