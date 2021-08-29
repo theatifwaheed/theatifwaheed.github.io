@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
+    "boxicons": "^2.0.9",
     "vendor": "^1.7.0",
     "vendors": "^1.0.4"
   }
